@@ -21,7 +21,8 @@ Content-Type: application/json
   "temperature": "103.1",
   "bloodPressure": "118/76",
   "heartRate": "92",
-  "severityLevel": "Medium"
+  "severityLevel": "Medium",
+  "privacyAcknowledged": true
 }
 
 ### List all patients
@@ -29,3 +30,18 @@ GET {{baseUrl}}/api/patients
 
 ### Get one patient by ID
 GET {{baseUrl}}/api/patient/replace-with-patient-id
+
+### Generate FHIR R4 bundle
+GET {{baseUrl}}/api/patient/replace-with-patient-id/fhir
+
+### Export patient to EHR adapter
+POST {{baseUrl}}/api/ehr/patient/replace-with-patient-id/export
+Content-Type: application/json
+
+{}
+
+### HIPAA readiness controls
+GET {{baseUrl}}/api/compliance/hipaa
+
+### Audit log
+GET {{baseUrl}}/api/audit?limit=20

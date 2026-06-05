@@ -123,6 +123,10 @@ function validatePatient(patient) {
     errors.push('Severity level is required.');
   }
 
+  if (!patient.privacyAcknowledged) {
+    errors.push('Privacy notice acknowledgement is required before submitting intake.');
+  }
+
   if (patient.temperature !== null && (Number.isNaN(patient.temperature) || patient.temperature < 90 || patient.temperature > 115)) {
     errors.push('Temperature must be a Fahrenheit value between 90 and 115 when provided.');
   }
@@ -277,6 +281,9 @@ function buildPatient(payload) {
     bloodPressure: normalizeText(payload.bloodPressure, 40),
     heartRate: parseOptionalNumber(payload.heartRate),
     severityLevel: normalizeChoice(payload.severityLevel, SEVERITY_LEVELS),
+    privacyAcknowledged: Boolean(payload.privacyAcknowledged),
+    privacyAcknowledgedAt: payload.privacyAcknowledged ? new Date().toISOString() : null,
+    dataUseConsent: normalizeChoice(payload.dataUseConsent || 'Treatment', ['Treatment', 'Declined']),
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   };

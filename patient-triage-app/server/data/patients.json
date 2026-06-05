@@ -130,5 +130,74 @@
         "recommendation": "R: Prioritize immediate clinician evaluation and repeat vital assessment on arrival."
       }
     }
+  },
+  {
+    "id": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "fullName": "Prabhakaran",
+    "age": 35,
+    "gender": "Male",
+    "phone": "9966776655",
+    "email": "jkk1@gmail.com",
+    "chiefComplaint": "Cough",
+    "symptoms": [
+      "Cough",
+      "headache"
+    ],
+    "symptomDuration": "Yesterday",
+    "medicalHistory": "Nothing",
+    "currentMedications": "Nothing",
+    "temperature": 98,
+    "bloodPressure": "120/110",
+    "heartRate": 88,
+    "severityLevel": "Low",
+    "privacyAcknowledged": true,
+    "privacyAcknowledgedAt": "2026-06-05T08:58:55.373Z",
+    "dataUseConsent": "Treatment",
+    "createdAt": "2026-06-05T08:58:55.373Z",
+    "updatedAt": "2026-06-05T08:58:55.373Z",
+    "triageLevel": "LOW",
+    "triageMetadata": {
+      "suggested_priority": "NON-URGENT",
+      "ui_theme_color": "slate-50"
+    },
+    "triageReasons": [
+      "Low reported severity and stable available vitals."
+    ],
+    "emergencyProtocol": false,
+    "emergencyMessage": "",
+    "patientIntakeSummary": {
+      "chief_complaint": "Cough",
+      "reported_vitals": {
+        "heart_rate": "88 bpm",
+        "temperature": "98 F",
+        "blood_pressure": "120/110"
+      }
+    },
+    "physicianSbarNote": {
+      "situation": "S: Prabhakaran reports Cough, headache with NON-URGENT preliminary triage priority.",
+      "background": "B: Symptoms duration: Yesterday. Medical history: Nothing Current medications: Nothing",
+      "assessment": "A: Available vitals include temperature 98 F, blood pressure 120/110, heart rate 88 bpm. Rule-based triage reasons: Low reported severity and stable available vitals.",
+      "recommendation": "R: Continue routine intake and provider review as scheduled."
+    },
+    "agentPayload": {
+      "triage_metadata": {
+        "suggested_priority": "NON-URGENT",
+        "ui_theme_color": "slate-50"
+      },
+      "patient_intake_summary": {
+        "chief_complaint": "Cough",
+        "reported_vitals": {
+          "heart_rate": "88 bpm",
+          "temperature": "98 F",
+          "blood_pressure": "120/110"
+        }
+      },
+      "physician_sbar_note": {
+        "situation": "S: Prabhakaran reports Cough, headache with NON-URGENT preliminary triage priority.",
+        "background": "B: Symptoms duration: Yesterday. Medical history: Nothing Current medications: Nothing",
+        "assessment": "A: Available vitals include temperature 98 F, blood pressure 120/110, heart rate 88 bpm. Rule-based triage reasons: Low reported severity and stable available vitals.",
+        "recommendation": "R: Continue routine intake and provider review as scheduled."
+      }
+    }
   }
 ]

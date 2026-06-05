@@ -7,6 +7,7 @@ const submitIntakeBtn = document.getElementById('submitIntakeBtn');
 const resetBtn = document.getElementById('resetBtn');
 const priorityBadge = document.getElementById('priorityBadge');
 const triageResult = document.getElementById('triageResult');
+const privacyAcknowledged = document.getElementById('privacyAcknowledged');
 const toast = document.getElementById('toast');
 
 const emergencyMessage = 'CRITICAL ALERT: Please stop using this application and call 911 or proceed to the nearest Emergency Room immediately.';
@@ -178,6 +179,8 @@ const steps = [
 let currentStepIndex = 0;
 let intake = {};
 let emergencyStopped = false;
+let intakeComplete = false;
+let intakeSubmitted = false;
 let toastTimer = null;
 
 function appendMessage(role, text, extraClass = '') {
@@ -210,7 +213,8 @@ function askCurrentQuestion() {
 
   if (!step) {
     appendMessage('bot', 'The intake is ready. Submit it so the care team can review the details.');
-    submitIntakeBtn.disabled = false;
+    intakeComplete = true;
+    updateSubmitState();
     chatInput.disabled = true;
     sendBtn.disabled = true;
     choiceBar.innerHTML = '';
@@ -301,8 +305,14 @@ function buildPayload() {
 
   return {
     ...intake,
-    symptoms: [...new Set(symptoms)]
+    symptoms: [...new Set(symptoms)],
+    privacyAcknowledged: privacyAcknowledged.checked,
+    dataUseConsent: privacyAcknowledged.checked ? 'Treatment' : 'Declined'
   };
+}
+
+function updateSubmitState() {
+  submitIntakeBtn.disabled = !intakeComplete || emergencyStopped || !privacyAcknowledged.checked || intakeSubmitted;
 }
 
 function setPriorityBadge(label, level) {
@@ -364,6 +374,13 @@ async function submitIntake() {
   }
 
   const payload = buildPayload();
+
+  if (!payload.privacyAcknowledged) {
+    showToast('Please acknowledge the privacy notice before submitting.', 'error');
+    updateSubmitState();
+    return;
+  }
+
   setLoading(true);
 
   try {
@@ -383,12 +400,14 @@ async function submitIntake() {
     applyTheme(data.patient);
     renderTriageResult(data.patient);
     appendSavedSummary(data.patient);
+    intakeSubmitted = true;
     showToast('Patient intake saved successfully.', 'success');
   } catch (error) {
     showToast(error.message || 'Unable to save patient intake.', 'error');
-    submitIntakeBtn.disabled = false;
+    updateSubmitState();
   } finally {
     setLoading(false);
+    updateSubmitState();
   }
 }
 
@@ -405,13 +424,16 @@ function resetIntake() {
   currentStepIndex = 0;
   intake = {};
   emergencyStopped = false;
+  intakeComplete = false;
+  intakeSubmitted = false;
+  privacyAcknowledged.checked = false;
   chatMessages.innerHTML = '';
   choiceBar.innerHTML = '';
   triageResult.className = 'triage-result hidden';
   triageResult.innerHTML = '';
   document.body.className = 'theme-slate';
   setPriorityBadge('Not assessed', 'neutral');
-  submitIntakeBtn.disabled = true;
+  updateSubmitState();
   renderSummary();
   askCurrentQuestion();
 }
@@ -423,5 +445,6 @@ chatForm.addEventListener('submit', (event) => {
 
 submitIntakeBtn.addEventListener('click', submitIntake);
 resetBtn.addEventListener('click', resetIntake);
+privacyAcknowledged.addEventListener('change', updateSubmitState);
 
 resetIntake();

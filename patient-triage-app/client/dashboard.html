@@ -24,8 +24,14 @@
           <p class="eyebrow">Clinician queue</p>
           <h1>Submitted patient data</h1>
         </div>
-        <button id="refreshBtn" class="secondary-button" type="button">Refresh</button>
+        <div class="heading-actions">
+          <button id="complianceBtn" class="secondary-button" type="button">HIPAA readiness</button>
+          <button id="auditBtn" class="secondary-button" type="button">Audit log</button>
+          <button id="refreshBtn" class="secondary-button" type="button">Refresh</button>
+        </div>
       </div>
+
+      <div id="compliancePanel" class="compliance-panel hidden" aria-live="polite"></div>
 
       <div class="metric-grid" aria-label="Triage summary">
         <article class="metric-card">
@@ -72,7 +78,7 @@
               <th>Symptoms</th>
               <th>Triage</th>
               <th>Submitted</th>
-              <th>Action</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody id="patientRows">
@@ -96,6 +102,16 @@
       </div>
     </aside>
   </main>
+
+  <div id="jsonModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="jsonModalTitle">
+    <section class="modal-panel">
+      <div class="modal-header">
+        <h2 id="jsonModalTitle">FHIR export</h2>
+        <button id="closeModalBtn" class="secondary-button" type="button">Close</button>
+      </div>
+      <pre id="jsonOutput" class="json-output"></pre>
+    </section>
+  </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 

@@ -1,0 +1,415 @@
+[
+  {
+    "id": "a0d17753-a704-46be-a380-d02d9ef23fe4",
+    "timestamp": "2026-06-05T09:10:05.115Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "11c6f8e0-5ed2-482f-b1d9-2abb53d50f1c",
+    "timestamp": "2026-06-05T09:05:40.016Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "0777e84a-8e0d-4e41-b45f-142ff1e92f6c",
+    "timestamp": "2026-06-05T09:05:10.633Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "d7940ad7-15c8-4d34-b488-f8ffa7706cbc",
+    "timestamp": "2026-06-05T09:05:03.743Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "9459974a-47ce-42f8-b29b-dc782fd7d5c0",
+    "timestamp": "2026-06-05T09:05:02.956Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "6d6025d4-ffb9-4e2b-8034-245e6abc3b36",
+    "timestamp": "2026-06-05T09:05:01.675Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "54150ef2-b035-46b5-bad1-7da6762aa2a0",
+    "timestamp": "2026-06-05T09:04:59.384Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "2a28dcdd-0d5e-46c0-b7fa-101e59b357d9",
+    "timestamp": "2026-06-05T09:04:40.792Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "7d0eae57-c8d8-4dae-b1a5-259e4bb30563",
+    "timestamp": "2026-06-05T09:04:39.533Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "375bdc50-d190-4d59-ba89-d12adb6e369a",
+    "timestamp": "2026-06-05T09:03:37.702Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "d71cdaf8-21bd-43e0-b0cc-66a57042c06c",
+    "timestamp": "2026-06-05T09:01:43.423Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "EHR_EXPORT_COMPLETED",
+    "patientId": "69549749-ab39-4752-87b1-7bb68606f640",
+    "route": "/api/ehr/patient/69549749-ab39-4752-87b1-7bb68606f640/export",
+    "method": "POST",
+    "outcome": "success",
+    "details": {
+      "mode": "mock",
+      "target": "Mock EHR adapter",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "4f166923-f078-4070-b4ed-8d6ed161fb77",
+    "timestamp": "2026-06-05T09:00:11.022Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "EHR_EXPORT_COMPLETED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/ehr/patient/ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3/export",
+    "method": "POST",
+    "outcome": "success",
+    "details": {
+      "mode": "mock",
+      "target": "Mock EHR adapter",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "c6473243-fe8d-4dc4-ba6e-55df6b6a17e3",
+    "timestamp": "2026-06-05T08:59:58.442Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "FHIR_BUNDLE_VIEWED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/patient/ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3/fhir",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "bundleType": "transaction",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "2a7bc391-99b5-48ae-af6d-6886cd2e92af",
+    "timestamp": "2026-06-05T08:59:30.525Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "EHR_EXPORT_COMPLETED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/ehr/patient/ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3/export",
+    "method": "POST",
+    "outcome": "success",
+    "details": {
+      "mode": "mock",
+      "target": "Mock EHR adapter",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "c9e9df09-9a44-49a7-9431-b1ffbf229ff0",
+    "timestamp": "2026-06-05T08:59:18.284Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "FHIR_BUNDLE_VIEWED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/patient/ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3/fhir",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "bundleType": "transaction",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "7469d52e-8460-47d5-954d-0fba5dc193a2",
+    "timestamp": "2026-06-05T08:59:15.753Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_RECORD_VIEWED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/patient/ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "triageLevel": "LOW"
+    }
+  },
+  {
+    "id": "1d5dbf19-9929-4b36-8683-fb306657612f",
+    "timestamp": "2026-06-05T08:59:06.531Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 3,
+      "minimumNecessaryView": true
+    }
+  },
+  {
+    "id": "abb2a655-e96f-4cc5-9d5a-c844e48ec47d",
+    "timestamp": "2026-06-05T08:58:55.426Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "eventType": "PATIENT_INTAKE_CREATED",
+    "patientId": "ccd8b7e4-d3cc-4db9-afbe-05588d0bc0a3",
+    "route": "/api/patient",
+    "method": "POST",
+    "outcome": "success",
+    "details": {
+      "triageLevel": "LOW",
+      "privacyAcknowledged": true
+    }
+  },
+  {
+    "id": "4b73c93f-4b6f-4321-9dfc-7b9b124f9d3a",
+    "timestamp": "2026-06-05T08:53:38.512Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457",
+    "eventType": "EHR_EXPORT_COMPLETED",
+    "patientId": "69549749-ab39-4752-87b1-7bb68606f640",
+    "route": "/api/ehr/patient/69549749-ab39-4752-87b1-7bb68606f640/export",
+    "method": "POST",
+    "outcome": "success",
+    "details": {
+      "mode": "mock",
+      "target": "Mock EHR adapter",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "5ae52a75-2e53-4694-b3a1-d03d8c226617",
+    "timestamp": "2026-06-05T08:53:38.442Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457",
+    "eventType": "FHIR_BUNDLE_VIEWED",
+    "patientId": "69549749-ab39-4752-87b1-7bb68606f640",
+    "route": "/api/patient/69549749-ab39-4752-87b1-7bb68606f640/fhir",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "bundleType": "transaction",
+      "resources": [
+        "Patient",
+        "Observation",
+        "Observation",
+        "Observation",
+        "QuestionnaireResponse"
+      ]
+    }
+  },
+  {
+    "id": "d2e3a0d0-a0e9-45a3-9581-5f701971518b",
+    "timestamp": "2026-06-05T08:53:38.413Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457",
+    "eventType": "COMPLIANCE_READINESS_VIEWED",
+    "patientId": null,
+    "route": "/api/compliance/hipaa",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "standard": "HIPAA/FHIR readiness"
+    }
+  },
+  {
+    "id": "9731d6e1-028b-453c-9292-373fc2e1a19d",
+    "timestamp": "2026-06-05T08:53:38.262Z",
+    "actor": "demo-clinician",
+    "role": "clinician",
+    "ipHash": "eff8e7ca506627fe",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8457",
+    "eventType": "PATIENT_LIST_VIEWED",
+    "patientId": null,
+    "route": "/api/patients",
+    "method": "GET",
+    "outcome": "success",
+    "details": {
+      "recordCount": 2,
+      "minimumNecessaryView": true
+    }
+  }
+]
