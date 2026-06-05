@@ -1,0 +1,134 @@
+[
+  {
+    "id": "b24ab3b0-fce8-40dc-b719-04cf29c07c8f",
+    "fullName": "ajith kumar",
+    "age": 27,
+    "gender": "Male",
+    "phone": "891201035",
+    "email": "aisao@gmail.com",
+    "chiefComplaint": "fever",
+    "symptoms": [
+      "fever",
+      "sore throat"
+    ],
+    "symptomDuration": "yesterday",
+    "medicalHistory": "diabeties",
+    "currentMedications": "tablet",
+    "temperature": 99,
+    "bloodPressure": "",
+    "heartRate": null,
+    "severityLevel": "Medium",
+    "createdAt": "2026-06-05T07:33:37.319Z",
+    "updatedAt": "2026-06-05T07:33:37.319Z",
+    "triageLevel": "MEDIUM",
+    "triageMetadata": {
+      "suggested_priority": "URGENT",
+      "ui_theme_color": "amber-50"
+    },
+    "triageReasons": [
+      "Symptoms require clinician review before routine visit flow."
+    ],
+    "emergencyProtocol": false,
+    "emergencyMessage": "",
+    "patientIntakeSummary": {
+      "chief_complaint": "fever",
+      "reported_vitals": {
+        "heart_rate": null,
+        "temperature": "99 F",
+        "blood_pressure": null
+      }
+    },
+    "physicianSbarNote": {
+      "situation": "S: ajith kumar reports fever, sore throat with URGENT preliminary triage priority.",
+      "background": "B: Symptoms duration: yesterday. Medical history: diabeties Current medications: tablet",
+      "assessment": "A: Available vitals include temperature 99 F. Rule-based triage reasons: Symptoms require clinician review before routine visit flow.",
+      "recommendation": "R: Route for timely provider review before routine visit flow."
+    },
+    "agentPayload": {
+      "triage_metadata": {
+        "suggested_priority": "URGENT",
+        "ui_theme_color": "amber-50"
+      },
+      "patient_intake_summary": {
+        "chief_complaint": "fever",
+        "reported_vitals": {
+          "heart_rate": null,
+          "temperature": "99 F",
+          "blood_pressure": null
+        }
+      },
+      "physician_sbar_note": {
+        "situation": "S: ajith kumar reports fever, sore throat with URGENT preliminary triage priority.",
+        "background": "B: Symptoms duration: yesterday. Medical history: diabeties Current medications: tablet",
+        "assessment": "A: Available vitals include temperature 99 F. Rule-based triage reasons: Symptoms require clinician review before routine visit flow.",
+        "recommendation": "R: Route for timely provider review before routine visit flow."
+      }
+    }
+  },
+  {
+    "id": "69549749-ab39-4752-87b1-7bb68606f640",
+    "fullName": "thenmozhi",
+    "age": 21,
+    "gender": "Female",
+    "phone": "987535677",
+    "email": "the@gmail.com",
+    "chiefComplaint": "fever",
+    "symptoms": [
+      "fever",
+      "vomit"
+    ],
+    "symptomDuration": "since morning",
+    "medicalHistory": "Nothing",
+    "currentMedications": "parcelmol",
+    "temperature": 98,
+    "bloodPressure": "120/90",
+    "heartRate": 86,
+    "severityLevel": "High",
+    "createdAt": "2026-06-05T07:51:48.401Z",
+    "updatedAt": "2026-06-05T07:51:48.401Z",
+    "triageLevel": "HIGH",
+    "triageMetadata": {
+      "suggested_priority": "EMERGENT",
+      "ui_theme_color": "rose-50"
+    },
+    "triageReasons": [
+      "Patient selected high severity."
+    ],
+    "emergencyProtocol": false,
+    "emergencyMessage": "",
+    "patientIntakeSummary": {
+      "chief_complaint": "fever",
+      "reported_vitals": {
+        "heart_rate": "86 bpm",
+        "temperature": "98 F",
+        "blood_pressure": "120/90"
+      }
+    },
+    "physicianSbarNote": {
+      "situation": "S: thenmozhi reports fever, vomit with EMERGENT preliminary triage priority.",
+      "background": "B: Symptoms duration: since morning. Medical history: Nothing Current medications: parcelmol",
+      "assessment": "A: Available vitals include temperature 98 F, blood pressure 120/90, heart rate 86 bpm. Rule-based triage reasons: Patient selected high severity.",
+      "recommendation": "R: Prioritize immediate clinician evaluation and repeat vital assessment on arrival."
+    },
+    "agentPayload": {
+      "triage_metadata": {
+        "suggested_priority": "EMERGENT",
+        "ui_theme_color": "rose-50"
+      },
+      "patient_intake_summary": {
+        "chief_complaint": "fever",
+        "reported_vitals": {
+          "heart_rate": "86 bpm",
+          "temperature": "98 F",
+          "blood_pressure": "120/90"
+        }
+      },
+      "physician_sbar_note": {
+        "situation": "S: thenmozhi reports fever, vomit with EMERGENT preliminary triage priority.",
+        "background": "B: Symptoms duration: since morning. Medical history: Nothing Current medications: parcelmol",
+        "assessment": "A: Available vitals include temperature 98 F, blood pressure 120/90, heart rate 86 bpm. Rule-based triage reasons: Patient selected high severity.",
+        "recommendation": "R: Prioritize immediate clinician evaluation and repeat vital assessment on arrival."
+      }
+    }
+  }
+]

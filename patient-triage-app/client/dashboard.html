@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Patient Triage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">CS</span>
+      <span>Patient Triage and Symptom Assessment System</span>
+    </a>
+    <nav class="nav-actions" aria-label="Primary navigation">
+      <a href="/">Patient intake</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-layout">
+    <section class="dashboard-main">
+      <div class="dashboard-heading">
+        <div>
+          <p class="eyebrow">Clinician queue</p>
+          <h1>Submitted patient data</h1>
+        </div>
+        <button id="refreshBtn" class="secondary-button" type="button">Refresh</button>
+      </div>
+
+      <div class="metric-grid" aria-label="Triage summary">
+        <article class="metric-card">
+          <span class="metric-label">Total</span>
+          <strong id="totalCount">0</strong>
+        </article>
+        <article class="metric-card high">
+          <span class="metric-label">High</span>
+          <strong id="highCount">0</strong>
+        </article>
+        <article class="metric-card medium">
+          <span class="metric-label">Medium</span>
+          <strong id="mediumCount">0</strong>
+        </article>
+        <article class="metric-card low">
+          <span class="metric-label">Low</span>
+          <strong id="lowCount">0</strong>
+        </article>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-field">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Name, phone, email, symptom">
+        </label>
+        <label class="filter-field">
+          <span>Priority</span>
+          <select id="priorityFilter">
+            <option value="ALL">All</option>
+            <option value="HIGH">High</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LOW">Low</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="table-shell">
+        <table>
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Age</th>
+              <th>Contact</th>
+              <th>Symptoms</th>
+              <th>Triage</th>
+              <th>Submitted</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="patientRows">
+            <tr>
+              <td colspan="7" class="empty-cell">Loading patient data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="panel detail-panel" aria-labelledby="detailsTitle">
+      <div class="panel-header compact">
+        <div>
+          <p class="eyebrow">Review</p>
+          <h2 id="detailsTitle">Patient details</h2>
+        </div>
+      </div>
+      <div id="detailsContent" class="details-content">
+        <p class="muted">Select a patient to view the intake summary and SBAR handoff.</p>
+      </div>
+    </aside>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

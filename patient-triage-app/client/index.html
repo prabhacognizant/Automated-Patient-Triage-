@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Triage and Symptom Assessment System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-slate">
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">CS</span>
+      <span>Patient Triage and Symptom Assessment System</span>
+    </a>
+    <nav class="nav-actions" aria-label="Primary navigation">
+      <a href="/dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="intake-layout">
+    <section class="panel chat-panel" aria-labelledby="chat-title">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">CareSync AI Triage Assistant</p>
+          <h1 id="chat-title">Patient intake</h1>
+        </div>
+        <span id="priorityBadge" class="priority-badge neutral">Not assessed</span>
+      </div>
+
+      <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+      <div id="choiceBar" class="choice-bar" aria-label="Quick choices"></div>
+
+      <form id="chatForm" class="chat-input-row" novalidate>
+        <textarea id="chatInput" rows="2" autocomplete="off"></textarea>
+        <button id="sendBtn" class="primary-button" type="submit">Send</button>
+      </form>
+
+      <p class="safety-note">Preliminary triage only. For life-threatening symptoms, call 911 immediately.</p>
+    </section>
+
+    <aside class="panel summary-panel" aria-labelledby="summary-title">
+      <div class="panel-header compact">
+        <div>
+          <p class="eyebrow">Live intake</p>
+          <h2 id="summary-title">Patient details</h2>
+        </div>
+      </div>
+
+      <dl class="summary-list">
+        <div><dt>Full name</dt><dd data-summary="fullName">Pending</dd></div>
+        <div><dt>Age</dt><dd data-summary="age">Pending</dd></div>
+        <div><dt>Gender</dt><dd data-summary="gender">Pending</dd></div>
+        <div><dt>Phone</dt><dd data-summary="phone">Pending</dd></div>
+        <div><dt>Email</dt><dd data-summary="email">Pending</dd></div>
+        <div><dt>Main symptom</dt><dd data-summary="chiefComplaint">Pending</dd></div>
+        <div><dt>Other symptoms</dt><dd data-summary="symptoms">Pending</dd></div>
+        <div><dt>Duration</dt><dd data-summary="symptomDuration">Pending</dd></div>
+        <div><dt>Medical history</dt><dd data-summary="medicalHistory">Pending</dd></div>
+        <div><dt>Medications</dt><dd data-summary="currentMedications">Pending</dd></div>
+        <div><dt>Temperature</dt><dd data-summary="temperature">Pending</dd></div>
+        <div><dt>Blood pressure</dt><dd data-summary="bloodPressure">Pending</dd></div>
+        <div><dt>Heart rate</dt><dd data-summary="heartRate">Pending</dd></div>
+        <div><dt>Severity</dt><dd data-summary="severityLevel">Pending</dd></div>
+      </dl>
+
+      <div id="triageResult" class="triage-result hidden"></div>
+
+      <div class="form-actions">
+        <button id="submitIntakeBtn" class="primary-button full-width" type="button" disabled>
+          <span class="button-label">Submit intake</span>
+          <span class="loading-dot hidden" aria-hidden="true"></span>
+        </button>
+        <button id="resetBtn" class="secondary-button full-width" type="button">Start new intake</button>
+      </div>
+    </aside>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>

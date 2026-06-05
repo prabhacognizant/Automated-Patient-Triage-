@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:5000
+
+### Health check
+GET {{baseUrl}}/api/health
+
+### Create patient intake
+POST {{baseUrl}}/api/patient
+Content-Type: application/json
+
+{
+  "fullName": "Demo Patient",
+  "age": 34,
+  "gender": "Female",
+  "phone": "555-012-3456",
+  "email": "demo.patient@example.com",
+  "chiefComplaint": "Fever and cough",
+  "symptoms": ["Fever", "Cough", "Fatigue"],
+  "symptomDuration": "Started yesterday",
+  "medicalHistory": "No major medical history reported",
+  "currentMedications": "None",
+  "temperature": "103.1",
+  "bloodPressure": "118/76",
+  "heartRate": "92",
+  "severityLevel": "Medium"
+}
+
+### List all patients
+GET {{baseUrl}}/api/patients
+
+### Get one patient by ID
+GET {{baseUrl}}/api/patient/replace-with-patient-id

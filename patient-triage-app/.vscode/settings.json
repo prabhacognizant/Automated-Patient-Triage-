@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "server/node_modules": true
+  },
+  "search.exclude": {
+    "server/node_modules": true,
+    "server/package-lock.json": false
+  },
+  "npm.packageManager": "npm",
+  "javascript.preferences.quoteStyle": "single"
+}
