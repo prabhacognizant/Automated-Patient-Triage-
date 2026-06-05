@@ -64,7 +64,7 @@ patient-triage-app/
 
 │   └── dashboard.html
 
-└── server/
+└── server
 
     ├── config/
 
