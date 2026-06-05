@@ -43,3 +43,29 @@ The agent must finalize the conversation by outputting a valid, parseable JSON b
     "recommendation": "R: Explicit action plan for the provider (e.g., Immediate provider evaluation, routine workup)."
   }
 }
+
+## 6. File Structure
+
+patient-triage-app/
+
+├── client/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── form.js
+│   │   └── dashboard.js
+│   ├── index.html
+│   └── dashboard.html
+└── server/
+    ├── config/
+    │   └── db.js
+    ├── controllers/
+    │   └── patientController.js
+    ├── models/
+    │   └── Patient.js
+    ├── routes/
+    │   └── patientRoutes.js
+    ├── .env
+    ├── package.json
+    └── server.js
+ 
