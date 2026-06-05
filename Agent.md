@@ -49,25 +49,45 @@ The agent must finalize the conversation by outputting a valid, parseable JSON b
 patient-triage-app/
 
 ├── client/
+
 │   ├── css/
+
 │   │   └── style.css
+
 │   ├── js/
+
 │   │   ├── form.js
+
 │   │   └── dashboard.js
+
 │   ├── index.html
+
 │   └── dashboard.html
+
 └── server/
+
     ├── config/
+
     │   └── db.js
+
     ├── controllers/
+
     │   └── patientController.js
+
     ├── models/
+
     │   └── Patient.js
+
     ├── routes/
+
     │   └── patientRoutes.js
+
     ├── .env
+
     ├── package.json
+
     └── server.js
+ 
 
 
  
